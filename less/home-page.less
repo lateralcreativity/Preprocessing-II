@@ -1,17 +1,23 @@
-.home {
-  header {
+header {
+  border-bottom: 2px dashed @navigation-border;
+  .flex-style(row, center, center);
+  .header-content{
+    max-width: 800px;
+    width: 100%;
     .flex-style(row, space-between, center);
-    margin: 30px 0;
+    margin: 30px 0 1%;
     
     @media @mobile {
       .flex-style(column, space-between, center);
       margin: 15px 0;
     }
   }
+}
+
+.home {
 
   .top-content {
     border-bottom: 2px dashed @navigation-border;
-    border-top: 2px dashed @navigation-border;
 
     .text-content {
       padding: 2% 0;
