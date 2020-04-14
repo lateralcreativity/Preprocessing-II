@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  .fade-in(3s);
 }
 
 html, body {
@@ -34,6 +35,11 @@ p {
   padding-bottom: 10px;
 }
 
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -43,4 +49,8 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile{
+    width: 90%;
+  }
 }
