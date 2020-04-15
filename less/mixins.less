@@ -1,1 +1,12 @@
 // Mixins in here
+.flex-style(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.fade-in(@duration) {
+  animation-name: fade-in;
+  animation-duration: @duration;
+}

@@ -4,14 +4,20 @@
 
 html {
   font-size: 62.5%;
+  .fade-in(3s);
 }
 
-html, body {
-  font-family: 'Roboto', sans-serif;
+html,
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Indie Flower", cursive;
 }
 
 h1 {
@@ -34,6 +40,11 @@ p {
   padding-bottom: 10px;
 }
 
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -43,4 +54,8 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  @media @mobile {
+    width: 90%;
+  }
 }
